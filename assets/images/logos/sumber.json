@@ -56,5 +56,12 @@
     "lebar": 447,
     "tinggi": 447,
     "piksel_latar_dihapus": 89586
+  },
+  {
+    "berkas": "figma.webp",
+    "asal": "codex-clipboard-dc430b33-7315-49a9-b89b-6407f524b307.png",
+    "metode": "Latar gelap yang tersambung ke tepi dihapus berdasarkan warna dari file asli, tanpa AI. Ruang kosong dipangkas; warna dan bentuk logo dipertahankan. WebP lossless.",
+    "lebar": 95,
+    "tinggi": 141
   }
 ]

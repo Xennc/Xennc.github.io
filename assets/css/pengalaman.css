@@ -9,6 +9,80 @@
   gap: 66px;
   align-items: center;
 }
+.kartu-proyek + .kartu-proyek {
+  margin-top: 64px;
+  padding-top: 56px;
+  border-top: 1px solid var(--warna-garis);
+}
+/* MOCKUP ASLI: tampil utuh agar nama aplikasi dan layar tidak terpotong. */
+.proyek-nayana {
+  align-items: start;
+  scroll-margin-top: 24px;
+}
+.sampul-nayana {
+  min-width: 0;
+  margin: 0;
+  border: 1px solid var(--warna-garis);
+  background: var(--warna-latar);
+}
+.sampul-nayana a {
+  display: block;
+}
+.sampul-nayana img {
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+.sampul-nayana figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 16px;
+  padding: 14px 18px;
+  color: var(--warna-redup);
+  font-size: var(--ukuran-label);
+}
+.sampul-nayana figcaption span:first-child {
+  color: var(--warna-biru);
+  letter-spacing: 0.1em;
+}
+.teks-proyek .kepanjangan-nayana {
+  margin-top: -8px;
+  color: var(--warna-biru);
+  font-family: var(--font-judul);
+  font-style: italic;
+  font-size: 1.125rem;
+}
+.identitas-proyek {
+  margin-block: 24px;
+  border-top: 1px solid var(--warna-garis);
+}
+.identitas-proyek > div {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr);
+  gap: 16px;
+  padding-block: 10px;
+  border-bottom: 1px solid var(--warna-garis);
+  font-size: var(--ukuran-kecil);
+}
+.identitas-proyek dt {
+  color: var(--warna-redup);
+}
+.identitas-proyek dd {
+  margin: 0;
+}
+.rincian-nayana {
+  margin-top: 24px;
+}
+.rincian-nayana h4 {
+  margin-block: 20px 8px;
+  font-size: var(--ukuran-kecil);
+  font-weight: 600;
+}
+.rincian-nayana p,
+.rincian-nayana li {
+  color: var(--warna-redup);
+  font-size: var(--ukuran-kecil);
+}
 .gambar-proyek {
   position: relative;
   min-height: 360px;
