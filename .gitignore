@@ -1,0 +1,28 @@
+# Konfigurasi lokal. Berkas contoh boleh dilacak jika nanti diperlukan.
+.env
+.env.*
+!.env.example
+
+# Berkas tambahan yang dibuat sistem operasi.
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Pengaturan .vscode/settings.json sengaja tetap boleh dilacak.
+# Tambahkan pola paket atau hasil build ketika alatnya benar-benar dipakai.
+
+# CATATAN LOKAL: audit, berkas pengumpulan, dan pengaturan pribadi tidak masuk backup.
+catatan-lokal/
+pengumpulan/
+*.code-workspace
+*.zip
+*.pdf
+*.log
+
+# RAHASIA: jangan simpan kata sandi, token, atau kunci privat di kode HTML/JS.
+*.pem
+*.key
+.env.example.local
+credentials.json
+secrets.json
+node_modules/

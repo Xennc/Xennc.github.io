@@ -1,0 +1,428 @@
+/* LAYAR MENENGAH: susunan disesuaikan ketika isi mulai membutuhkan ruang. */
+@media (max-width: 1050px) {
+  .wadah {
+    width: calc(100% - 64px);
+  }
+  .pembuka {
+    gap: 30px 35px;
+  }
+  /* Perkecil kemiringan dan tonjolan catatan agar tetap muat di tablet. */
+  .ilustrasi-pembuka {
+    transform: rotate(-1deg);
+  }
+  .catatan-ilustrasi {
+    right: -8px;
+  }
+  .pembuka h1 {
+    font-size: clamp(49px, 6.7vw, 72px);
+  }
+  .navigasi-utama {
+    gap: 18px;
+  }
+  .susunan-profil,
+  .kartu-proyek,
+  .bagian-surat {
+    gap: 40px;
+  }
+  .susunan-minat {
+    gap: 20px;
+  }
+  .teks-minat h3 {
+    font-size: 23px;
+  }
+  .teks-minat > p:not(.label-kecil) {
+    min-height: auto;
+  }
+  .rak-musik {
+    gap: 30px;
+    padding: 30px;
+  }
+}
+
+/* HP: satu kolom, tombol cukup besar, dan menu ringkas ketika JS tersedia. */
+@media (max-width: 860px) {
+  html {
+    scroll-padding-top: 92px;
+  }
+  .wadah {
+    width: calc(100% - 40px);
+  }
+  .isi-kepala {
+    min-height: 77px;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-block: 15px;
+  }
+  .identitas-jurnal {
+    font-size: 12px;
+  }
+  .identitas-jurnal small {
+    font-size: 0.75rem;
+  }
+  .simbol-jurnal {
+    width: 21px;
+    height: 30px;
+  }
+  .tombol-menu:not([hidden]) {
+    display: inline-flex;
+  }
+  .navigasi-utama {
+    flex-basis: 100%;
+    display: flex;
+    gap: 7px 20px;
+    flex-wrap: wrap;
+    padding-top: 9px;
+    border-top: 1px solid var(--warna-garis);
+  }
+  .navigasi-utama a {
+    font-size: 0.875rem;
+  }
+  .js-aktif .navigasi-utama {
+    display: grid;
+    gap: 0;
+    padding-block: 9px;
+  }
+  .js-aktif .navigasi-utama a {
+    padding: 8px 0;
+  }
+  .js-aktif .navigasi-utama a::after {
+    display: none;
+  }
+  .pembuka {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-top: 46px;
+    padding-bottom: 25px;
+  }
+  .teks-pembuka {
+    padding: 0;
+  }
+  .pembuka h1 {
+    font-size: clamp(49px, 11vw, 74px);
+  }
+  .pembuka .penanda-bab {
+    font-size: 0.75rem;
+    margin-bottom: 25px;
+  }
+  .perkenalan-singkat {
+    max-width: 510px;
+    font-size: 1rem;
+  }
+  .identitas-singkat {
+    margin-top: 29px;
+  }
+  .ilustrasi-pembuka {
+    width: min(100% - 15px, 450px);
+    margin: 0 auto;
+  }
+  .catatan-ilustrasi {
+    right: -11px;
+    bottom: 67px;
+    font-size: 16px;
+    padding: 13px 18px;
+  }
+  .ilustrasi-pembuka figcaption {
+    font-size: 0.75rem;
+  }
+  .petunjuk-gulir {
+    margin-top: 0;
+  }
+  .bab {
+    padding-block: 72px;
+  }
+  .bagian-profil {
+    margin-top: 10px;
+  }
+  .susunan-profil,
+  .kartu-proyek,
+  .bagian-surat {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+  .blok-biodata .biodata {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* Email panjang memakai satu baris penuh supaya tidak terpotong di tengah kata. */
+  .blok-biodata .biodata > div:last-child {
+    grid-column: 1 / -1;
+  }
+  .linimasa-pendidikan {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .linimasa-pendidikan li {
+    grid-template-columns: 60px minmax(0, 1fr);
+    gap: 16px;
+    padding: 24px;
+  }
+  .linimasa-pendidikan img {
+    width: 60px;
+    height: 60px;
+  }
+  .tahun-pendidikan {
+    grid-column: 1 / -1;
+  }
+  .linimasa-pendidikan h3 {
+    font-size: 23px;
+  }
+  .catatan-belajar {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 24px;
+  }
+  .daftar-keahlian {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding-top: 24px;
+  }
+  .catatan-prestasi ul {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .panggung-foto {
+    margin-top: 34px;
+  }
+  .petunjuk-foto {
+    margin-bottom: 9px;
+  }
+  .cerita-diri .kalimat-utama {
+    font-size: 22px;
+  }
+  .biodata {
+    gap: 23px 17px;
+  }
+  .biodata dd {
+    font-size: 1rem;
+  }
+  .kepala-bagian {
+    display: block;
+    margin-bottom: 33px;
+  }
+  .kepala-bagian > p {
+    margin-top: 23px;
+  }
+  .susunan-minat {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+  .gambar-minat {
+    height: 220px;
+    margin-bottom: 23px;
+  }
+  .teks-minat h3 {
+    font-size: 28px;
+  }
+  .teks-minat > p:not(.label-kecil) {
+    min-height: auto;
+  }
+  .catatan-minat {
+    min-height: 44px;
+  }
+  .rak-daftar-minat {
+    padding: 24px 24px 8px;
+  }
+  .rak-daftar-minat .rincian-minat ul {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+  }
+  .rak-musik {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 25px;
+    margin-top: 48px;
+  }
+  .pengantar-musik h3 {
+    font-size: 31px;
+  }
+  .cap-musik {
+    margin-top: 0;
+  }
+  .daftar-musisi {
+    gap: 0 18px;
+  }
+  .daftar-musisi a {
+    font-size: 16px;
+  }
+  .judul-pengalaman {
+    gap: 18px;
+  }
+  .judul-pengalaman h3 {
+    font-size: 28px;
+  }
+  .logo-tim {
+    width: 74px;
+    height: 74px;
+  }
+  .album-baseball {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+  .gambar-proyek {
+    min-height: 330px;
+  }
+  .teks-proyek h3 {
+    font-size: 32px;
+  }
+  .surat {
+    margin-right: 10px;
+  }
+  .surat summary {
+    padding: 27px 24px;
+  }
+  .segel-surat {
+    right: 23px;
+    top: 26px;
+    width: 38px;
+    height: 46px;
+    font-size: 21px;
+  }
+  .penerima-surat {
+    max-width: 78%;
+  }
+  .penerima-surat > span {
+    font-size: 23px;
+  }
+  .isi-surat {
+    padding-inline: 24px;
+    font-size: 16px;
+  }
+  .penutup {
+    padding-block: 18px 70px;
+  }
+  .kaki-halaman {
+    flex-wrap: wrap;
+    gap: 12px 25px;
+  }
+  .catatan-kaki {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 370px) {
+  .linimasa-pendidikan li {
+    padding: 20px;
+    gap: 14px;
+    grid-template-columns: 48px minmax(0, 1fr);
+  }
+  .linimasa-pendidikan img {
+    width: 48px;
+    height: 48px;
+  }
+  .linimasa-pendidikan h3 {
+    font-size: 21px;
+  }
+  .rak-daftar-minat .rincian-minat ul {
+    grid-template-columns: 1fr;
+  }
+  .pembuka h1 {
+    font-size: 46px;
+  }
+  .tindakan-pembuka {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  .biodata {
+    grid-template-columns: 1fr;
+  }
+  .blok-biodata .biodata {
+    grid-template-columns: 1fr;
+  }
+  .judul-sampul {
+    font-size: 35px;
+    left: 23px;
+  }
+  .penerima-surat > span {
+    font-size: 21px;
+  }
+  .rak-musik {
+    padding: 20px;
+  }
+  .daftar-musisi {
+    grid-template-columns: 1fr;
+  }
+  .judul-pengalaman {
+    align-items: flex-start;
+  }
+  .judul-pengalaman h3 {
+    font-size: 25px;
+  }
+  .logo-tim {
+    width: 58px;
+    height: 58px;
+  }
+}
+
+/* AKSESIBILITAS: pengaturan gerak perangkat selalu dihormati. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .efek-muncul-aktif .muncul-bertahap:not(.sudah-terlihat) {
+    opacity: 1;
+    translate: none;
+  }
+  .bingkai-ilustrasi {
+    transform: none;
+  }
+}
+@media print {
+  :root {
+    color-scheme: light;
+  }
+  body,
+  .bagian-profil,
+  .bagian-jejak {
+    background: white;
+    color: #172a37;
+  }
+  .kepala-halaman {
+    position: static;
+    background: white;
+  }
+  .tombol-menu,
+  .kontrol-animasi,
+  .petunjuk-gulir,
+  .lewati-navigasi,
+  .ilustrasi-pembuka,
+  .label-profil,
+  .catatan-profil,
+  .petunjuk-foto,
+  .kontrol-musik,
+  .bingkai-spotify {
+    display: none !important;
+  }
+  .wadah {
+    width: 100%;
+  }
+  .pembuka,
+  .susunan-profil,
+  .kartu-proyek,
+  .bagian-surat {
+    display: block;
+  }
+  .bab {
+    padding-block: 25px;
+  }
+  .muncul-bertahap {
+    opacity: 1 !important;
+    translate: none !important;
+  }
+  p,
+  h1,
+  h2,
+  h3,
+  a,
+  .penanda-bab,
+  em {
+    color: #172a37 !important;
+  }
+}

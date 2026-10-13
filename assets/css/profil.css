@@ -1,0 +1,298 @@
+/* BAB PROFIL: biru abu menyambung dengan latar, sementara teks tetap jelas. */
+.bab {
+  padding-block: var(--jarak-bab);
+}
+.bagian-profil {
+  background: linear-gradient(#213944ed, #213944fa 50%, #213944ed);
+  color: var(--warna-teks);
+  margin-top: 28px;
+  position: relative;
+  border-block: 1px solid #a5c5d11a;
+}
+.bagian-profil .penanda-bab {
+  color: var(--warna-tembaga);
+}
+.bagian-profil h2 em {
+  color: var(--warna-biru);
+}
+.susunan-profil {
+  display: grid;
+  grid-template-columns: 1fr 1.08fr;
+  gap: 80px;
+}
+.kontak-profil {
+  margin-top: 26px;
+}
+.panggung-foto {
+  position: relative;
+  width: min(100% - 32px, 330px);
+  margin: 42px auto 0;
+}
+.bingkai-foto {
+  margin: 0;
+  padding: 10px 10px 0;
+  background: #314b57;
+  border: 1px solid #72879170;
+  box-shadow: 8px 12px 0 #14283466;
+  transform: rotate(-2deg);
+}
+.potongan-foto {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #273b37;
+}
+/* KROP TAMPILAN: hanya menampilkan potret pertama dari kolase; berkas asli tidak diubah. */
+.potongan-foto img {
+  width: 125%;
+  max-width: none;
+  height: auto;
+  transform: translate(-2.5%, -11.2%);
+}
+.bingkai-foto figcaption {
+  padding: 15px 4px;
+  text-align: center;
+  font: italic 15px/1.5 var(--font-judul);
+}
+.petunjuk-foto {
+  margin: 28px 0 0;
+  text-align: center;
+  color: var(--warna-redup);
+  font-size: 0.875rem;
+}
+.label-profil {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 46px;
+  border: 1px solid #788e997d;
+  padding: 7px 13px 7px 8px;
+  background: #2b424f;
+  color: var(--warna-teks);
+  box-shadow: 0 5px 15px #142a3440;
+  font-size: 12px;
+  border-radius: 30px;
+  animation: label-melayang 8s ease-in-out infinite;
+}
+.label-steam {
+  top: 10%;
+  left: -19px;
+}
+.label-discord {
+  top: 28%;
+  right: -21px;
+  animation-delay: -2s;
+}
+.label-spotify {
+  bottom: 24%;
+  left: -24px;
+  animation-delay: -4s;
+}
+.label-instagram {
+  bottom: 11%;
+  right: -18px;
+  animation-delay: -6s;
+}
+.ikon-label {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.ikon-spotify {
+  padding: 2px;
+}
+.tanda-tambah {
+  color: #bdd2d8;
+  margin-left: 4px;
+}
+.label-profil:hover,
+.label-profil:focus-visible {
+  animation-play-state: paused;
+  background: #385562;
+}
+@keyframes label-melayang {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -3px;
+  }
+}
+/* CATATAN KECIL: native popover menangani klik luar dan Escape, JS hanya mengatur posisi. */
+.catatan-profil {
+  width: min(355px, calc(100% - 32px));
+  max-height: calc(100dvh - 32px);
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 29px;
+  background: #263d49;
+  color: var(--warna-teks);
+  border: 1px solid #728994;
+  border-radius: 6px;
+  box-shadow: 0 15px 60px #03121b66;
+}
+.catatan-profil::backdrop {
+  background: transparent;
+}
+.catatan-profil.posisi-diatur {
+  inset: var(--catatan-atas) auto auto var(--catatan-kiri);
+  margin: 0;
+}
+.catatan-profil h3 {
+  margin-bottom: 13px;
+  padding-right: 18px;
+}
+.catatan-profil p:not(.label-kecil) {
+  color: var(--warna-redup);
+  font-size: 14px;
+}
+.catatan-profil .tautan-teks {
+  font-size: 12px;
+}
+.tautan-catatan {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 18px;
+}
+.catatan-profil :focus-visible {
+  outline-color: var(--warna-biru);
+}
+.tutup-catatan {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  color: var(--warna-teks);
+  font-size: 24px;
+}
+@supports not selector(:popover-open) {
+  .label-profil,
+  .tutup-catatan,
+  .petunjuk-foto {
+    display: none;
+  }
+  .catatan-profil {
+    position: static;
+    margin: 20px 0 0;
+    max-height: none;
+    width: 100%;
+  }
+}
+.cerita-diri p {
+  color: var(--warna-redup);
+  font-size: var(--ukuran-isi);
+  max-width: var(--panjang-baris);
+}
+.cerita-diri .kalimat-utama {
+  font: 23px/1.5 var(--font-judul);
+  color: var(--warna-teks);
+}
+.cerita-diri .kalimat-utama strong {
+  font-weight: 400;
+}
+.identitas-kampus {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--warna-garis);
+}
+/* Berkas lockup resmi disimpan utuh. Jendela ini menampilkan lambang di sisi kirinya. */
+.lambang-kampus {
+  display: block;
+  width: 58px;
+  height: 60px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.lambang-kampus img {
+  height: 60px;
+  width: auto;
+  max-width: none;
+}
+.identitas-kampus .label-kecil {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+.identitas-kampus p {
+  color: var(--warna-teks);
+  font: 21px/1.35 var(--font-judul);
+  margin: 3px 0 0;
+}
+.identitas-kampus small {
+  display: block;
+  margin-top: 5px;
+  color: var(--warna-redup);
+  font: 0.875rem/1.5 var(--font-isi);
+}
+.biodata {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 24px 28px;
+  border-top: 1px solid var(--warna-garis);
+  padding-top: 28px;
+  margin: 30px 0 0;
+}
+.biodata dt {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--warna-redup);
+  margin-bottom: 8px;
+}
+.biodata dd {
+  margin: 0;
+  font: 1rem/1.7 var(--font-isi);
+}
+
+/* DATA TUGAS: data wajib terpisah dari cerita, sehingga mudah diperiksa panitia. */
+.blok-biodata {
+  margin-top: 52px;
+}
+.blok-biodata h3 {
+  margin-bottom: 16px;
+}
+.blok-biodata .biodata {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 0;
+  gap: 28px 32px;
+}
+.biodata dd {
+  overflow-wrap: anywhere;
+}
+.biodata a {
+  display: inline-block;
+  min-height: 44px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.identitas-kelompok {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: fit-content;
+  margin: 28px auto 0;
+  padding: 12px 20px 12px 12px;
+  border: 1px solid var(--warna-garis);
+}
+.identitas-kelompok img {
+  width: 66px;
+  height: 66px;
+  border-radius: 6px;
+}
+.identitas-kelompok p {
+  margin: 0;
+}
+.identitas-kelompok p:last-child {
+  font: 18px/1.5 var(--font-judul);
+}
+.identitas-kelompok .label-kecil {
+  font-size: 0.75rem;
+}

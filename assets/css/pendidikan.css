@@ -1,0 +1,126 @@
+/* PENDIDIKAN & BELAJAR: empat kartu berurutan dengan logo asli masing-masing. */
+.linimasa-pendidikan {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.linimasa-pendidikan li {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  align-items: start;
+  align-content: start;
+  gap: 22px;
+  border: 1px solid var(--warna-garis);
+  border-radius: 12px;
+  padding: 28px;
+  background: #213944f5;
+}
+.linimasa-pendidikan .pendidikan-sekarang {
+  border-color: #8eafbd;
+  background: linear-gradient(120deg, #2b4855, #203944);
+}
+.linimasa-pendidikan li > div {
+  grid-column: 2;
+  grid-row: 2;
+}
+.tahun-pendidikan {
+  grid-column: 1 / -1;
+  color: var(--warna-tembaga);
+  font-size: var(--ukuran-kecil);
+  line-height: 1.5;
+}
+.linimasa-pendidikan h3 {
+  font-size: 24px;
+  margin: 0;
+}
+.linimasa-pendidikan p:not(.label-kecil) {
+  margin: 10px 0 0;
+  color: var(--warna-redup);
+  font-size: var(--ukuran-isi);
+}
+.linimasa-pendidikan .label-kecil {
+  margin-bottom: 8px;
+}
+.linimasa-pendidikan img {
+  grid-column: 1;
+  grid-row: 2;
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 6px #071c274d);
+}
+.catatan-belajar {
+  margin-top: 28px;
+  padding: 32px;
+  border: 1px solid var(--warna-garis);
+  border-radius: 12px;
+  background: var(--warna-panel);
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 50px;
+}
+.catatan-belajar p:not(.penanda-bab) {
+  color: var(--warna-redup);
+  font-size: var(--ukuran-isi);
+  margin-bottom: 0;
+}
+.catatan-belajar .penanda-bab {
+  font-size: 0.75rem;
+  margin-bottom: 18px;
+}
+.alat-belajar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.alat-belajar li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+}
+/* BINGKAI NETRAL: warna asli logo tetap ada, sedangkan ruang di sekitarnya seragam. */
+.alat-belajar img {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  object-fit: contain;
+  background: #2b4652;
+  border: 1px solid #a5c5d133;
+  border-radius: 8px;
+  padding: 8px;
+}
+.alat-belajar small {
+  display: block;
+  color: var(--warna-redup);
+  font-size: 0.875rem;
+}
+.daftar-keahlian {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 40px;
+  border-top: 1px solid var(--warna-garis);
+  margin: 0;
+  padding-top: 28px;
+}
+.daftar-keahlian dt {
+  color: var(--warna-teks);
+  font-size: var(--ukuran-isi);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.daftar-keahlian dd {
+  color: var(--warna-redup);
+  font-size: var(--ukuran-isi);
+  margin: 0;
+  max-width: 48ch;
+}
+.catatan-pengembangan {
+  margin: 20px 0 0;
+  color: var(--warna-redup);
+  font-size: 0.875rem;
+}

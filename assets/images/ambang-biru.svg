@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760" role="img" aria-labelledby="title description">
+  <title id="title">Di ambang biru</title>
+  <desc id="description">Ilustrasi orisinal pintu bercahaya, tangga batu, laut dan langit berbintang.</desc>
+  <defs>
+    <linearGradient id="sky" x2=".3" y2="1"><stop stop-color="#091b30"/><stop offset=".57" stop-color="#244d65"/><stop offset="1" stop-color="#8caeba"/></linearGradient>
+    <linearGradient id="sea" x2="0" y2="1"><stop stop-color="#668d9e"/><stop offset=".2" stop-color="#254e65"/><stop offset="1" stop-color="#0b263d"/></linearGradient>
+    <linearGradient id="light" x2="0" y2="1"><stop stop-color="#f0e9cf"/><stop offset=".45" stop-color="#c0e0dd"/><stop offset="1" stop-color="#649dab"/></linearGradient>
+    <linearGradient id="frame" x2="1" y2=".5"><stop stop-color="#305165"/><stop offset=".35" stop-color="#a5c9d0"/><stop offset=".6" stop-color="#dcdfcd"/><stop offset="1" stop-color="#3d6478"/></linearGradient>
+    <linearGradient id="door" x2="1" y2="0"><stop stop-color="#0a263b"/><stop offset="1" stop-color="#426b7e"/></linearGradient>
+    <linearGradient id="reflection" x2="0" y2="1"><stop stop-color="#bfe1df" stop-opacity=".43"/><stop offset="1" stop-color="#bfe1df" stop-opacity="0"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#c7e5de" stop-opacity=".28"/><stop offset="1" stop-color="#a2d8d9" stop-opacity="0"/></radialGradient>
+    <linearGradient id="stepFace" x2="0" y2="1"><stop stop-color="#2e4d60"/><stop offset="1" stop-color="#10283c"/></linearGradient>
+    <filter id="mist"><feGaussianBlur stdDeviation="15"/></filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".055"/></feComponentTransfer><feBlend in="SourceGraphic" mode="soft-light"/></filter>
+    <clipPath id="inside"><path d="M248 463V257a79 79 0 0 1 158 0v206z"/></clipPath>
+  </defs>
+  <g filter="url(#grain)">
+    <path fill="url(#sky)" d="M0 0h640v760H0z"/>
+    <ellipse cx="329" cy="330" rx="280" ry="330" fill="url(#halo)"/>
+    <g fill="#dae9e6" opacity=".65"><circle cx="97" cy="109" r="1.3"/><circle cx="165" cy="210" r="1"/><circle cx="474" cy="99" r="1.7"/><circle cx="531" cy="216" r="1"/><circle cx="207" cy="71" r="1"/><circle cx="373" cy="105" r="1"/><circle cx="574" cy="149" r="1.4"/><circle cx="421" cy="219" r=".8"/><circle cx="61" cy="301" r="1"/><circle cx="450" cy="311" r="1.2"/></g>
+    <path d="M47 225a270 270 0 0 1 539 3" fill="none" stroke="#bdc7c2" stroke-opacity=".18"/>
+    <path d="M464 73v13m-6.5-6.5h13" stroke="#e5e8d7" stroke-opacity=".75"/>
+    <circle cx="127" cy="158" r="27" fill="#e7e6cb"/>
+    <circle cx="132" cy="154" r="29" fill="#e7e6cb" opacity=".15"/>
+    <path d="M0 435q92-26 188 0t206 1 246-5v329H0z" fill="url(#sea)"/>
+    <ellipse cx="310" cy="433" rx="380" ry="11" fill="#b9d3d2" opacity=".35" filter="url(#mist)"/>
+    <g stroke="#aec8cc" fill="none" stroke-width="1" opacity=".28"><path d="M0 454q87-5 190 0t221 0 229-2"/><path d="M0 469h139m293 3h208M28 487h199m200-2h161M0 509h165m270 0h205M35 532h193m213 0h126M0 561h167m289-2h184M17 601h190m287-3h146M0 654h102m379-1h159M0 704h152m316 0h172"/></g>
+    <path d="M244 466h169l99 278H129z" fill="url(#reflection)"/>
+    <path d="M231 472V257a96 96 0 0 1 192 0v215z" fill="url(#frame)"/>
+    <path d="M243 467V257a84 84 0 0 1 168 0v210z" fill="#133047"/>
+    <path d="M248 463V257a79 79 0 0 1 158 0v206z" fill="url(#light)"/>
+    <g clip-path="url(#inside)"><path d="M242 386q55-18 104-3t80-7v90H240z" fill="#598f9e"/><path d="M244 401h164m-159 12h165m-170 17h174m-175 22h176" stroke="#d8e9db" opacity=".6"/><circle cx="359" cy="277" r="16" fill="#f2edcf"/></g>
+    <path d="M249 459V259q0-62 70-77l-4 269z" fill="url(#door)" stroke="#87afbb" stroke-width="1.2"/>
+    <path d="M260 434V262q2-39 46-57l-3 226z" fill="none" stroke="#799bab" stroke-opacity=".3"/>
+    <ellipse cx="302" cy="361" rx="2" ry="4" fill="#dfd9b9"/>
+    <path d="M248 260q0-79 79-79t79 79" fill="none" stroke="#e5e6d3" stroke-opacity=".65"/>
+    <g fill="url(#stepFace)" stroke="#345467" stroke-width="1"><path d="M223 470h208v14H223z"/><path d="M211 490h232v16H211z"/><path d="M194 515h266v19H194z"/><path d="M172 547h310v23H172z"/><path d="M145 587h364v28H145z"/><path d="M110 637h434v35H110z"/><path d="M64 701h526v59H64z"/></g>
+    <g fill="#8eabb3"><path d="m231 463-8 7h208l-8-7z"/><path d="m223 484-12 6h232l-12-6z"/><path d="m211 506-17 9h266l-17-9z"/><path d="m194 534-22 13h310l-22-13z"/><path d="m172 570-27 17h364l-27-17z"/><path d="m145 615-35 22h434l-35-22z"/><path d="m110 672-46 29h526l-46-29z"/></g>
+    <g stroke="#c2d6d5" stroke-opacity=".6"><path d="M223 470h208M211 490h232M194 515h266M172 547h310M145 587h364M110 637h434M64 701h526"/></g>
+    <path d="m327 465-56 295h107l-18-295z" fill="url(#reflection)" opacity=".4"/>
+  </g>
+</svg>

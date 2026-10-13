@@ -1,0 +1,212 @@
+/* JEJAK: proyek belajar dan pengalaman organisasi yang benar-benar diceritakan. */
+.bagian-jejak {
+  background: #203641;
+  border-block: 1px solid #a5c5d11a;
+}
+.kartu-proyek {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 66px;
+  align-items: center;
+}
+.gambar-proyek {
+  position: relative;
+  min-height: 360px;
+  overflow: hidden;
+  background: #1c4358;
+}
+.gambar-proyek img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 37%;
+  opacity: 0.55;
+}
+.gambar-proyek::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #0e263bb8, #10273600 80%);
+}
+.judul-sampul {
+  position: absolute;
+  z-index: 1;
+  left: 33px;
+  top: 30px;
+  font: 42px/1.1 var(--font-judul);
+  letter-spacing: -0.04em;
+  color: #f1ecdf;
+}
+.judul-sampul em {
+  color: #c4dce5;
+}
+.nomor-proyek {
+  position: absolute;
+  z-index: 1;
+  bottom: 23px;
+  left: 33px;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: #e7e6db;
+}
+.teks-proyek h3 {
+  font-size: 33px;
+}
+.teks-proyek > p:not(.penanda-bab) {
+  font-size: 1rem;
+  color: var(--warna-redup);
+}
+.teks-proyek .penanda-bab {
+  margin-bottom: 16px;
+  font-size: 0.75rem;
+}
+.daftar-label {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 22px 0;
+}
+.daftar-label li {
+  padding: 4px 11px;
+  border: 1px solid #547386;
+  color: #c3d8e2;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+}
+.kartu-pengalaman {
+  margin-top: 70px;
+  border-top: 1px solid var(--warna-garis);
+  padding-top: 42px;
+}
+.kartu-pengalaman .penanda-bab {
+  margin-bottom: 14px;
+  font-size: 0.75rem;
+}
+.judul-pengalaman {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.judul-pengalaman h3 {
+  margin: 0;
+  font-size: 34px;
+}
+.logo-tim {
+  width: 95px;
+  height: 95px;
+  flex-shrink: 0;
+  object-fit: contain;
+  border: 1px solid var(--warna-garis);
+  padding: 7px;
+  background: #000;
+  border-radius: 50%;
+}
+.cerita-pengalaman {
+  color: var(--warna-redup);
+  font-size: 1rem;
+  max-width: var(--panjang-baris);
+}
+.judul-album {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin: 32px 0 20px;
+}
+.judul-album h4 {
+  margin: 0;
+  font: italic 22px/1.5 var(--font-judul);
+}
+.judul-album p {
+  margin: 0;
+  color: var(--warna-redup);
+  font-size: 0.875rem;
+}
+.album-baseball {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.album-baseball figure {
+  margin: 0;
+  min-width: 0;
+}
+.album-baseball a {
+  display: block;
+  background: #071b27;
+  overflow: hidden;
+}
+.album-baseball img {
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.album-baseball a:hover img {
+  transform: scale(1.015);
+}
+.album-baseball figcaption {
+  padding: 14px 0 0;
+  font: italic 16px/1.5 var(--font-judul);
+}
+.album-baseball figcaption span {
+  display: block;
+  color: var(--warna-redup);
+  font: 0.75rem/1.6 var(--font-isi);
+  letter-spacing: 0.14em;
+  margin-bottom: 5px;
+}
+.catatan-proyek-berikutnya {
+  text-align: center;
+  color: var(--warna-redup);
+  font: italic 14px/1.7 var(--font-judul);
+  margin: 36px 0 0;
+}
+.catatan-proyek-berikutnya span {
+  font-size: 0.75rem;
+  color: var(--warna-biru);
+  margin-right: 8px;
+}
+
+.daftar-kontribusi {
+  max-width: var(--panjang-baris);
+  padding-left: 20px;
+  color: var(--warna-redup);
+  font-size: 1rem;
+}
+.daftar-kontribusi li {
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+.catatan-prestasi {
+  margin-block: 32px;
+  padding: 25px;
+  border: 1px solid var(--warna-garis);
+}
+.catatan-prestasi h4 {
+  margin: 0 0 20px;
+  font: 26px/1.3 var(--font-judul);
+}
+.catatan-prestasi ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.catatan-prestasi strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.catatan-prestasi li span {
+  display: block;
+  color: var(--warna-redup);
+  font-size: 0.875rem;
+  margin-top: 7px;
+}

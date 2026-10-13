@@ -1,0 +1,117 @@
+/* FILM ROLL: ubah kejelasan (0–1) dan blur di sini.
+   Bingkai mengikuti rasio sampul Steam. Judul asli selalu utuh, tanpa dipotong. */
+:root {
+  --kejelasan-film: 0.14;
+  --kabur-film: 0px;
+  --lebar-bingkai-film: clamp(150px, 18vw, 245px);
+}
+.latar-sinema {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 85% 12%, #8d7ba215, transparent 45%);
+}
+.pita-film {
+  position: absolute;
+  display: flex;
+  gap: 12px;
+  width: max-content;
+  padding: 24px 12px;
+  background: #0c1d27;
+  border-block: 1px solid #c4ab9155;
+  opacity: var(--kejelasan-film);
+  filter: saturate(0.45) blur(var(--kabur-film));
+  mask-image: linear-gradient(90deg, transparent, #000 6% 94%, transparent);
+}
+.pita-film::before,
+.pita-film::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0 12px,
+    #b7c7cb 12px 23px,
+    transparent 23px 33px
+  );
+}
+.pita-film::before {
+  top: 7px;
+}
+.pita-film::after {
+  bottom: 7px;
+}
+.pita-film img {
+  flex: 0 0 var(--lebar-bingkai-film);
+  width: var(--lebar-bingkai-film);
+  height: auto;
+  aspect-ratio: 460 / 215;
+  object-fit: contain;
+  border: 1px solid #91a5af44;
+  border-radius: 3px;
+  background: #0e1118;
+}
+.pita-film-atas {
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%) rotate(-7deg);
+}
+.pita-film-bawah {
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%) rotate(7deg);
+}
+
+/* ARCANE: gambar pilihan Andhika dengan bingkai senada. */
+.poster-arcane {
+  background: #0e1118;
+  display: block;
+  border: 1px solid #9b8d795e;
+}
+.poster-arcane img {
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.penanda-favorit {
+  position: absolute;
+  top: 12px;
+  right: 13px;
+  color: #e0cbb0;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  background: #293540;
+  padding: 4px 9px;
+}
+.kartu-film .label-kecil {
+  color: var(--warna-ungu);
+}
+
+@media (max-width: 860px) {
+  .pita-film {
+    opacity: 0.1;
+  }
+  .pita-film-atas {
+    top: 18%;
+    transform: translateX(-48%) rotate(-7deg);
+  }
+  .pita-film-bawah {
+    bottom: 8%;
+    transform: translateX(-52%) rotate(7deg);
+  }
+  .identitas-kampus {
+    gap: 14px;
+  }
+  .identitas-kampus p {
+    font-size: 20px;
+  }
+}
+@media print {
+  .latar-sinema {
+    display: none;
+  }
+}

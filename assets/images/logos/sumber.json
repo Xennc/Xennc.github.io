@@ -1,0 +1,60 @@
+[
+  {
+    "berkas": "sd-saraswati-6.webp",
+    "asal": "codex-clipboard-894488b6-e2e1-4ea7-9e25-df6ac8a1c1e7.png",
+    "metode": "Latar putih yang tersambung ke tepi dihapus dari file asli, tanpa AI; RGB dan piksel interior dipertahankan. Disimpan sebagai WebP lossless tanpa mengubah ukuran atau detail.",
+    "lebar": 447,
+    "tinggi": 447,
+    "piksel_latar_dihapus": 41955
+  },
+  {
+    "berkas": "smp-negeri-10.webp",
+    "asal": "codex-clipboard-f2417d50-4821-4241-9e4f-b47311cd3db8.png",
+    "metode": "Latar putih yang tersambung ke tepi dihapus dari file asli, tanpa AI; RGB dan piksel interior dipertahankan. Disimpan sebagai WebP lossless tanpa mengubah ukuran atau detail.",
+    "lebar": 447,
+    "tinggi": 447,
+    "piksel_latar_dihapus": 68701
+  },
+  {
+    "berkas": "sma-negeri-8.webp",
+    "asal": "codex-clipboard-577a86f7-5c27-409f-bfe4-8ba7a531d1a5.jpg",
+    "metode": "Latar putih yang tersambung ke tepi dihapus dari file asli, tanpa AI; RGB dan piksel interior dipertahankan. Disimpan sebagai WebP lossless tanpa mengubah ukuran atau detail.",
+    "lebar": 360,
+    "tinggi": 360,
+    "piksel_latar_dihapus": 39614
+  },
+  {
+    "berkas": "universitas-udayana.webp",
+    "asal": "Logo Unud New.jpg.jpeg",
+    "metode": "Latar putih luar dihapus dari file asli tanpa AI. Hasil 1600 x 1600 diperkecil menjadi 400 x 400 dengan Lanczos, lalu disimpan sebagai WebP lossless dengan transparansi. Jumlah piksel latar mengacu ukuran asli.",
+    "lebar": 400,
+    "tinggi": 400,
+    "piksel_latar_dihapus": 590818,
+    "lebar_asal": 1600,
+    "tinggi_asal": 1600
+  },
+  {
+    "berkas": "cpp.webp",
+    "asal": "codex-clipboard-f9191f49-f70f-44cb-bbc7-059d0670879b.png",
+    "metode": "Latar putih yang tersambung ke tepi dihapus dari file asli, tanpa AI; RGB dan piksel interior dipertahankan. Disimpan sebagai WebP lossless tanpa mengubah ukuran atau detail.",
+    "lebar": 306,
+    "tinggi": 344,
+    "piksel_latar_dihapus": 24354
+  },
+  {
+    "berkas": "python.webp",
+    "asal": "codex-clipboard-12777752-c78a-4d43-a37e-ca3e8773746b.png",
+    "metode": "Latar putih yang tersambung ke tepi dihapus dari file asli, tanpa AI; RGB dan piksel interior dipertahankan. Disimpan sebagai WebP lossless tanpa mengubah ukuran atau detail.",
+    "lebar": 447,
+    "tinggi": 447,
+    "piksel_latar_dihapus": 70912
+  },
+  {
+    "berkas": "vscode.webp",
+    "asal": "codex-clipboard-147b5f2a-97f1-4131-890b-0677b0c2a4b5.png",
+    "metode": "Latar putih yang tersambung ke tepi dihapus dari file asli, tanpa AI; RGB dan piksel interior dipertahankan. Disimpan sebagai WebP lossless tanpa mengubah ukuran atau detail.",
+    "lebar": 447,
+    "tinggi": 447,
+    "piksel_latar_dihapus": 89586
+  }
+]

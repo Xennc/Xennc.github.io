@@ -1,0 +1,289 @@
+/* MINAT: kartu mempunyai pola yang sama agar mudah menambah atau mengedit. */
+.kepala-bagian {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 45px;
+  margin-bottom: 46px;
+}
+.kepala-bagian h2 {
+  margin-bottom: 0;
+}
+.kepala-bagian > p {
+  margin-bottom: 5px;
+  color: var(--warna-redup);
+  font: italic 15px/1.7 var(--font-judul);
+}
+.susunan-minat {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+.kartu-minat {
+  border-bottom: 1px solid var(--warna-garis);
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.gambar-minat {
+  height: 205px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 29px;
+  background: #18384b;
+}
+.nomor-gambar {
+  position: absolute;
+  bottom: 12px;
+  left: 17px;
+  color: #d3e0e4;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+}
+.teks-minat > p:not(.label-kecil) {
+  font-size: var(--ukuran-isi);
+  line-height: 1.8;
+  color: var(--warna-redup);
+  min-height: auto;
+}
+.teks-minat h3 {
+  font-size: 1.625rem;
+}
+.catatan-minat {
+  display: block;
+  padding: 12px 0;
+  min-height: 51px;
+  font: italic 0.9375rem/1.7 var(--font-judul);
+  color: var(--warna-redup);
+  margin-top: auto;
+}
+.gambar-foto img {
+  height: 100%;
+  object-fit: cover;
+}
+.gambar-foto::after {
+  content: '';
+  position: absolute;
+  inset: 60% 0 0;
+  background: linear-gradient(transparent, #051820b3);
+  pointer-events: none;
+}
+.gambar-foto .nomor-gambar {
+  z-index: 1;
+  color: #fff9ef;
+}
+.gambar-game img {
+  object-position: 76% 72%;
+  transform: scale(1.32);
+  transform-origin: 76% 70%;
+}
+.gambar-baseball img {
+  object-position: 50% 63%;
+}
+.kartu-game .daftar-label {
+  margin: 12px 0;
+}
+details summary {
+  cursor: pointer;
+  list-style: none;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+.rincian-minat {
+  margin-top: 0;
+}
+.teks-minat {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.rincian-minat summary,
+.rincian-proyek summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding-block: 12px;
+  min-height: 48px;
+  font-size: 0.875rem;
+  border-top: 1px solid var(--warna-garis);
+}
+details summary > span:last-child {
+  flex-shrink: 0;
+}
+.rincian-minat[open] summary > span,
+.rincian-proyek[open] summary > span {
+  transform: rotate(45deg);
+}
+.rincian-minat ul,
+.rincian-proyek ul {
+  padding-left: 18px;
+  color: var(--warna-redup);
+  font-size: 0.9375rem;
+  margin: 8px 0 12px;
+}
+.rincian-minat li,
+.rincian-proyek li {
+  padding-left: 4px;
+  margin-bottom: 8px;
+}
+
+/* DAFTAR PANJANG: berada di luar kartu supaya membuka satu daftar tidak menarik kartu lain. */
+.rak-daftar-minat {
+  margin-top: 36px;
+  padding: 28px 32px 12px;
+  border: 1px solid var(--warna-garis);
+  border-radius: 12px;
+  background: #1e3642f5;
+}
+.rak-daftar-minat h3 {
+  margin-bottom: 28px;
+}
+.rak-daftar-minat .rincian-minat summary {
+  padding-block: 18px;
+  font-size: 1rem;
+}
+.rak-daftar-minat .rincian-minat ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px 28px;
+  margin: 0;
+  padding: 4px 0 24px;
+}
+.rak-daftar-minat .rincian-minat li {
+  margin: 0;
+  padding: 6px 0 6px 14px;
+  border-left: 2px solid #59788a;
+}
+
+/* RAK MUSIK: nama artis dan tautan diedit di HTML; warna panel di sini. */
+.rak-musik {
+  margin-top: 72px;
+  padding: 39px;
+  border: 1px solid var(--warna-garis);
+  display: grid;
+  grid-template-columns: 0.85fr 1.2fr;
+  gap: 56px;
+  background: #213944f7;
+}
+.pengantar-musik .penanda-bab {
+  font-size: 0.75rem;
+  margin-bottom: 20px;
+}
+.pengantar-musik h3 {
+  font-size: 35px;
+}
+.pengantar-musik h3 em {
+  color: var(--warna-biru);
+}
+.pengantar-musik > p:not(.penanda-bab) {
+  color: var(--warna-redup);
+  font-size: 1rem;
+  max-width: 300px;
+}
+.cap-musik {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--warna-biru);
+  border: 1px solid var(--warna-garis);
+  padding: 7px 13px;
+  transform: rotate(-3deg);
+}
+.daftar-musisi {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 27px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 24px;
+}
+.daftar-musisi a {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-height: 54px;
+  border-bottom: 1px solid var(--warna-garis);
+  font: 17px/1.4 var(--font-judul);
+}
+.daftar-musisi a:hover {
+  color: var(--warna-biru);
+}
+.daftar-musisi a > span {
+  font: 0.75rem var(--font-isi);
+  color: var(--warna-redup);
+}
+.daftar-musisi a > b {
+  margin-left: auto;
+  font: 14px var(--font-isi);
+  color: var(--warna-biru);
+}
+.pemutar-musik {
+  padding-top: 4px;
+}
+.pengantar-pemutar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+.pengantar-pemutar p {
+  margin: 0;
+  font-size: 14px;
+}
+.pengantar-pemutar div > span {
+  display: block;
+  margin-top: 3px;
+  color: var(--warna-redup);
+  font-size: 0.875rem;
+}
+.ikon-piringan {
+  display: grid;
+  place-items: center;
+  width: 47px;
+  height: 47px;
+  flex-shrink: 0;
+  border: 1px solid #748790;
+  border-radius: 50%;
+  background: repeating-radial-gradient(circle, #10212c 0 4px, #314653 5px 6px);
+  color: #ded6b8;
+  font-size: 21px;
+}
+.pemutar-musik .tombol {
+  font-size: 12px;
+}
+.kontrol-musik {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.kontrol-musik label {
+  flex-basis: 100%;
+  font-size: 0.875rem;
+  color: var(--warna-redup);
+}
+.kontrol-musik select {
+  min-height: 48px;
+  max-width: 100%;
+  flex: 1;
+  border: 1px solid #607c89;
+  background: #10212c;
+  color: var(--warna-teks);
+  font: 0.9375rem var(--font-isi);
+  padding: 10px;
+}
+.tautan-musik {
+  font-size: 0.875rem;
+  margin-top: 10px;
+}
+.bingkai-spotify {
+  display: block;
+  width: 100%;
+  height: 352px;
+  border: 0;
+  border-radius: 12px;
+}

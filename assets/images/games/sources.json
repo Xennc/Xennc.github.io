@@ -1,0 +1,116 @@
+[
+  {
+    "file": "subnautica.webp",
+    "title": "Subnautica",
+    "store": "https://store.steampowered.com/app/264710/",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_e182b6b20bb797500f9f63c561586d920d44e37c.1920x1080.jpg?t=1777456112",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "file": "sons-of-the-forest.webp",
+    "title": "Sons Of The Forest",
+    "store": "https://store.steampowered.com/app/1326470/",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1326470/ss_e6e3ab1badfb287a77fb6eef7b1589a35371496b.1920x1080.jpg?t=1708624856",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "file": "dota-2.webp",
+    "title": "Dota 2",
+    "store": "https://store.steampowered.com/app/570/",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/ss_ad8eee787704745ccdecdfde3a5cd2733704898d.1920x1080.jpg?t=1791407503",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "file": "counter-strike-2.webp",
+    "title": "Counter-Strike 2",
+    "store": "https://store.steampowered.com/app/730/",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/ss_13bb35638c0267759276f511ee97064773b37a51.1920x1080.jpg?t=1789251637",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "file": "gta-v.webp",
+    "title": "Grand Theft Auto V Legacy",
+    "store": "https://store.steampowered.com/app/271590/",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/ss_da39c16db175f6973770bae6b91d411251763152.1920x1080.jpg?t=1765387725",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "file": "left-4-dead.webp",
+    "title": "Left 4 Dead",
+    "store": "https://store.steampowered.com/app/500/",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/500/0000006030.1920x1080.jpg?t=1745368560",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "file": "sampul-skyrim.webp",
+    "title": "The Elder Scrolls V: Skyrim Special Edition",
+    "store": "https://store.steampowered.com/app/489830/",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/489830/header.jpg?t=1786648247",
+    "retrieved": "2026-10-12",
+    "note": "Sampul resmi Steam dengan judul asli. Mewakili seri favorit; bukan bukti kepemilikan edisi."
+  },
+  {
+    "file": "sampul-fallout.webp",
+    "title": "Fallout 4",
+    "store": "https://store.steampowered.com/app/377160/",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/377160/header.jpg?t=1786648137",
+    "retrieved": "2026-10-12",
+    "note": "Sampul resmi Steam dengan judul asli. Mewakili seri favorit; bukan bukti kepemilikan edisi."
+  },
+  {
+    "file": "sampul-dota-2.webp",
+    "title": "Dota 2",
+    "store": "https://store.steampowered.com/app/570/",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/header.jpg?t=1791407503",
+    "retrieved": "2026-10-12",
+    "note": "Sampul resmi Steam dengan judul asli. Mewakili seri favorit; bukan bukti kepemilikan edisi."
+  },
+  {
+    "file": "sampul-cs2.webp",
+    "title": "Counter-Strike 2",
+    "store": "https://store.steampowered.com/app/730/",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1789251637",
+    "retrieved": "2026-10-12",
+    "note": "Sampul resmi Steam dengan judul asli. Mewakili seri favorit; bukan bukti kepemilikan edisi."
+  },
+  {
+    "file": "sampul-left-4-dead-2.webp",
+    "title": "Left 4 Dead 2",
+    "store": "https://store.steampowered.com/app/550/",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/550/header.jpg?t=1772742214",
+    "retrieved": "2026-10-12",
+    "note": "Sampul resmi Steam dengan judul asli. Mewakili seri favorit; bukan bukti kepemilikan edisi."
+  },
+  {
+    "file": "sampul-sons-of-the-forest.webp",
+    "title": "Sons Of The Forest",
+    "store": "https://store.steampowered.com/app/1326470/",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1326470/header.jpg?t=1708624856",
+    "retrieved": "2026-10-12",
+    "note": "Sampul resmi Steam dengan judul asli. Mewakili seri favorit; bukan bukti kepemilikan edisi."
+  },
+  {
+    "file": "sampul-subnautica.webp",
+    "title": "Subnautica",
+    "store": "https://store.steampowered.com/app/264710/",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/header.jpg?t=1777456112",
+    "retrieved": "2026-10-12",
+    "note": "Sampul resmi Steam dengan judul asli. Mewakili seri favorit; bukan bukti kepemilikan edisi."
+  },
+  {
+    "file": "sampul-gta-v.webp",
+    "title": "Grand Theft Auto V Legacy",
+    "store": "https://store.steampowered.com/app/271590/",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/header.jpg?t=1765387725",
+    "retrieved": "2026-10-12",
+    "note": "Sampul resmi Steam dengan judul asli. Mewakili seri favorit; bukan bukti kepemilikan edisi."
+  },
+  {
+    "file": "sampul-dying-light.webp",
+    "title": "Dying Light",
+    "store": "https://store.steampowered.com/app/239140/",
+    "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/9d1b810b85ae46a0acbdfddf583ccbb81271183e/header.jpg?t=1782913513",
+    "retrieved": "2026-10-12",
+    "note": "Sampul resmi Steam dengan judul asli. Mewakili seri favorit; bukan bukti kepemilikan edisi."
+  }
+]
